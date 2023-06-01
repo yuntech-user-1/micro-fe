@@ -62,7 +62,7 @@
             // https://dummyjson.com/users/search
             // http://localhost:1234
             // https://micro-be-alpha.vercel.app
-            const { users } = await (await fetch(`http://localhost:1234?q=${q}`)).json();
+            const { users } = await (await fetch(`https://micro-be-one.vercel.app?q=${q}`)).json();
             document.getElementById('body').innerHTML = (
               users.map((user, index) => (
                 `<tr>` +
